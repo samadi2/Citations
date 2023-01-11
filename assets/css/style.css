@@ -1,0 +1,85 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: calc(100vh - 21.44px);
+    background-image: url(../img/jeux2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family:'Coffee At Midnight Demo';
+    src: url(../fonts/CoffeeAtMidnightDemo.ttf);
+    font-family:'Working Together';
+    src: url(../fonts/WorkingTogether.ttf);
+    font-family: 'Winter Coffee';
+    src: url(../fonts/WinterCoffee.ttf);
+}
+
+p{
+    font-family:'Winter Coffee',serif;
+    font-size: medium;
+    color: black;
+}
+p:hover{
+    text-decoration: underline;
+    color: blue;
+    zoom: 1.5;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 80vh;
+    align-items: center;
+}
+h1{
+    border: solid 4px black;
+    border-radius: 8px;
+    background: linear-gradient(blue, pink);
+    text-align: center;
+    font-family: 'fantasy';
+    color: red;
+    padding: 10px;
+    
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border: 1px solid #0da2ff;
+    border-radius: 2px;
+}
+#citation1, #citation2{
+    text-align: center;
+
+}
+span{
+    text-align: center;
+    font-size: 22px;
+}
+h2,label{
+    font-family: 'Coffee At Midnight Demo';
+    text-decoration: underline;
+}
+@media screen and (max-width:414px){
+    body{
+        background-image: url(../img/jeux.jpg);
+        background-repeat: repeat;
+        background-size: contain;
+    }
+    .container{
+        font-size: large;
+    }
+    p{
+        font-family: 'Winter Coffee', serif;
+        font-size: 24px;
+    }
+    p:hover{
+        text-shadow: #0da2ff;
+    }
+}
+
